@@ -1,3 +1,6 @@
+% Written by: Akiv Jhirad
+% Contact: akivjh@gmail.com
+
 % A function to test the 2 models. 
 % P_test is a matrix of input vectors that are very similar to the input
 % vectors that the model is trained on.
