@@ -1,3 +1,6 @@
+% Written by: Akiv Jhirad
+% Contact: akivjh@gmail.com
+
 function [NewWeights] = Train(OldWeights,InputPattern, LearningRate,...
     NumIterations, Model)
 
