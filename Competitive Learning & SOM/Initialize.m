@@ -1,3 +1,6 @@
+% Written by: Akiv Jhirad
+% Contact: akivjh@gmail.com
+
 clear all;
 
 % Initializing global variables
