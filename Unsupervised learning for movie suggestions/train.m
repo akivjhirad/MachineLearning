@@ -27,6 +27,6 @@ function [newWeights,G] = train(oldWeights,nReps,nGibbsCycles,epsilon,trainingpa
         end % for pattern
         weightDelta = weightDelta/nPatterns - weightCost * newWeights;
         newWeights = newWeights + weightDelta;
-        fprintf(1,'Energy diff = %f\n', G);
+%         fprintf(1,'Energy diff = %f\n', G);
     end % for rep
 end
