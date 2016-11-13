@@ -10,7 +10,7 @@ function inputState = testHidden(weights)
     K = 1;
     nGibbsCycles = 5;
 
-    hiddenState = testHiddenPatterns(:,2);
+    hiddenState = testHiddenPatterns(:,1);
     weights(:,1) = hiddenState;
 
 %     [inputState, inputProb] = backward(hiddenState,weights);

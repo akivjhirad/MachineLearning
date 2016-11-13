@@ -1,0 +1,58 @@
+<!-- <body ng-app="demo" ng-controller="demoController" ng-cloak class="ng-cloak">
+    <div>{{data.output}}</div>
+</body> -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.5.1/socket.io.js'></script>
+<script>
+
+var socket = io.connect();
+var img = new Image();
+im_arr = [
+'https://upload.wikimedia.org/wikipedia/en/a/ad/Lord_of_the_Rings_-_The_Two_Towers.jpg',
+'https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg',
+'https://upload.wikimedia.org/wikipedia/en/5/53/Blade_Runner_poster.jpg',
+'https://resizing.flixster.com/zxUuZuL1_WHzUi0CH2BOn5qiLck=/206x305/v1.bTsxMTIwNDc0MjtqOzE3MjI5OzEyMDA7MTQwNzsxODc2',
+'https://upload.wikimedia.org/wikipedia/en/0/0e/Hook_poster_transparent.png',
+'https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/The_Rocky_Horror_Picture_Show.jpg/220px-The_Rocky_Horror_Picture_Show.jpg',
+'https://images-na.ssl-images-amazon.com/images/M/MV5BNTUxNzYyMjg2N15BMl5BanBnXkFtZTcwMTExNzExNw@@._V1_UX182_CR0,0,182,268_AL_.jpg',
+'https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Scream4Poster.jpg/220px-Scream4Poster.jpg',
+'https://images-na.ssl-images-amazon.com/images/I/51fFn7AqG2L._AC_UL320_SR214,320_.jpg',
+'https://aelarsen.files.wordpress.com/2014/08/images4.jpeg?w=529',
+'https://resizing.flixster.com/x-v9Pmx2VYNcaDVdG6SLIyP1XnQ=/206x305/v1.bTsxMTIwODQ3MTtqOzE3MjI5OzEyMDA7MTIwMDsxNjAw',
+'http://static4.opensubtitles.org/gfx/thumbs/6/4/6/8/0068646.jpg'
+]
+
+socket.on('updated', function(data){
+	var div = document.querySelector('#images');
+	for (var index = 0; index < 11; index++) {
+		if (data[index] == 1){
+			var image = new Image();
+			image.src = im_arr[index];
+			div.appendChild(image);
+			image.outerHTML += '<br>';
+		}
+	}
+});
+
+// angular.module('demo', []).controller('demoController', ['$scope', function($scope) {
+// 	    socket.on('updated', function(data) {
+// 	        $scope.$apply(function(){
+// 	            $scope.data = data;
+// 	        });
+// 	    });
+// 	}
+// ]);
+</script>
+
+<style type="text/css">
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}</style>
+
+<div id="images"></div>

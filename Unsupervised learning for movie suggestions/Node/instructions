@@ -1,0 +1,8 @@
+1. open 2 windows powershells as administrator
+2. on the first one navigate to D:\Program Files\MongoDB\Server\3.2\bin
+	- run '.\mongod'
+3. on the second one, go to D:\Documents\GitHub\MachineLearning\Unsupervised learning for movie suggestions\Node
+	- run 'node .\server.js'
+4. navigate to localhost
+5. run matlab script
+6. refresh localhost page
