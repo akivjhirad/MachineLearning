@@ -22,7 +22,7 @@ im_arr = [
 
 socket.on('updated', function(data){
 	var div = document.querySelector('#images');
-	for (var index = 0; index < 11; index++) {
+	for (var index = 0; index < 12; index++) {
 		if (data[index] == 1){
 			var image = new Image();
 			image.src = im_arr[index];
@@ -31,6 +31,7 @@ socket.on('updated', function(data){
 		}
 	}
 });
+
 </script>
 
 <style type="text/css">

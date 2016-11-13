@@ -10,19 +10,19 @@ function inputState = testHidden(weights)
     K = 1;
     nGibbsCycles = 5;
     
-    % 1 = sci-fi & fantasy
-    % 2 = comedy
+    % 1 = drama
+    % 2 = drama
     % 3 = horror
     % 4 = drama
-    hiddenState = testHiddenPatterns(:,1);
+    hiddenState = testHiddenPatterns(:,2);
     weights(:,1) = hiddenState;
 
-%     [inputState, inputProb] = backward(hiddenState,weights);
+    [inputState, inputProb] = backward(hiddenState,weights);
 
-    for cycles = 1:nGibbsCycles
-        [inputState, inputProb] = backward(hiddenState,weights);
-        [hiddenState,hiddenProb] = forward(inputState,weights);
-    end
+%     for cycles = 1:nGibbsCycles
+%         [inputState, inputProb] = backward(hiddenState,weights);
+%         [hiddenState,hiddenProb] = forward(inputState,weights);
+%     end
 
 end
 

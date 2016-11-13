@@ -13,3 +13,7 @@ nLearnReps = 100;  % Keep training in blocks of 100 learning iterations until co
 				   % (i.e. until G-error seems to be converging to a minimum, although it will bounce up and down 
 				   % a bit due to stochasticity of unit states in learning equations, it should on average be 
 				   % decreasing).
+
+for i = 1:60
+   [weights,G] = train(weights, nLearnReps, K, epsilon, trainingPatterns,weightCost);
+end

@@ -1,16 +1,16 @@
-function output = RunML()
+function output = RunML(trainingPatterns, weights)
 
-K = 1; % Number of steps of brief Gibbs sampling
-nHidden = 5;  % number of hidden units including the bias unit.  
-              % So for example, if we want 2 hidden units, set nHidden = 3, 
-              % if we want 4 hidden units, set nHidden = 5, etc.
-initPatterns;
-nInputs = size(trainingPatterns,1);
-nTrainingPatterns = size(trainingPatterns,3);
-epsilon = 0.05;	 % the learning rate
-weightCost = 0.0002;  % used in train.m to decay weights toward zero after each learning update
-weights = rand(nHidden, nInputs) - 0.5;  % random initial values
-nLearnReps = 100;  % Keep training in blocks of 100 learning iterations until convergence 
+% K = 1; % Number of steps of brief Gibbs sampling
+% nHidden = 5;  % number of hidden units including the bias unit.  
+%               % So for example, if we want 2 hidden units, set nHidden = 3, 
+%               % if we want 4 hidden units, set nHidden = 5, etc.
+% initPatterns;
+% nInputs = size(trainingPatterns,1);
+% nTrainingPatterns = size(trainingPatterns,3);
+% epsilon = 0.05;	 % the learning rate
+% weightCost = 0.0002;  % used in train.m to decay weights toward zero after each learning update
+% weights = rand(nHidden, nInputs) - 0.5;  % random initial values
+% nLearnReps = 100;  % Keep training in blocks of 100 learning iterations until convergence 
 
 % find the possible generated patterns
 pos = 1;

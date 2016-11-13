@@ -40,7 +40,7 @@ db.once('open', function callback() {
                 });
                 //save data
                 savingData.save();
-                }
+                
             })
         });
     });

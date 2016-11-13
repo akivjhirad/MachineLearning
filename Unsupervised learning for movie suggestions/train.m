@@ -15,18 +15,18 @@ function [newWeights,G] = train(oldWeights,nReps,nGibbsCycles,epsilon,trainingpa
             % Positive phase
             inputState = trainingpatterns(:,pat);
             [hiddenState,hiddenProb] = forward(inputState,newWeights);
-            weightDelta = weightDelta + epsilon * hiddenState * inputState';    % originally no semicolon
+            weightDelta = weightDelta + epsilon * hiddenState * inputState'; 
             G = G + calcEnergy(inputState, hiddenState, newWeights);
             % Negative phase
             for cycles = 1:nGibbsCycles
                 [inputState, inputProb] = backward(hiddenState,newWeights);
                 [hiddenState,hiddenProb] = forward(inputState,newWeights);
             end % for cycles
-            weightDelta = weightDelta - epsilon * hiddenState * inputState';    % originally no semicolon
+            weightDelta = weightDelta - epsilon * hiddenState * inputState';
             G = G - calcEnergy(inputProb, hiddenProb, newWeights);
         end % for pattern
         weightDelta = weightDelta/nPatterns - weightCost * newWeights;
         newWeights = newWeights + weightDelta;
-%         fprintf(1,'Energy diff = %f\n', G);
+        fprintf(1,'Energy diff = %f\n', G);
     end % for rep
 end
