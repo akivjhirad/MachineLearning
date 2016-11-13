@@ -3,6 +3,6 @@
 	- run '.\mongod'
 3. on the second one, go to D:\Documents\GitHub\MachineLearning\Unsupervised learning for movie suggestions\Node
 	- run 'node .\server.js'
-4. navigate to localhost
+4. navigate to localhost:3000
 5. run matlab script
 6. refresh localhost page
