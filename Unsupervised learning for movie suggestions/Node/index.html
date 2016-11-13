@@ -1,6 +1,3 @@
-<!-- <body ng-app="demo" ng-controller="demoController" ng-cloak class="ng-cloak">
-    <div>{{data.output}}</div>
-</body> -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.5.1/socket.io.js'></script>
@@ -34,15 +31,6 @@ socket.on('updated', function(data){
 		}
 	}
 });
-
-// angular.module('demo', []).controller('demoController', ['$scope', function($scope) {
-// 	    socket.on('updated', function(data) {
-// 	        $scope.$apply(function(){
-// 	            $scope.data = data;
-// 	        });
-// 	    });
-// 	}
-// ]);
 </script>
 
 <style type="text/css">

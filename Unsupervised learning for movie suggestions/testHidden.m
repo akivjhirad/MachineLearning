@@ -22,5 +22,4 @@ function inputState = testHidden(weights)
 
 end
 
-%%%%%%%%%%%%% End testHidden.m %%%%%%%%%%%%%%%%%%%%%
 

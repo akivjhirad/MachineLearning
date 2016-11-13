@@ -6,7 +6,7 @@ nHidden = 5;  % number of hidden units including the bias unit.
               % if we want 4 hidden units, set nHidden = 5, etc.
 initPatterns;
 nInputs = size(trainingPatterns,1);
-nTrainingPatterns = size(trainingPatterns,2);
+nTrainingPatterns = size(trainingPatterns,3);
 epsilon = 0.05;	 % the learning rate
 weightCost = 0.0002;  % used in train.m to decay weights toward zero after each learning update
 weights = rand(nHidden, nInputs) - 0.5;  % random initial values
