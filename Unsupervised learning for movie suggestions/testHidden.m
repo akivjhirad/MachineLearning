@@ -9,7 +9,11 @@ function inputState = testHidden(weights)
     weightCost = 0.0002;
     K = 1;
     nGibbsCycles = 5;
-
+    
+    % 1 = sci-fi & fantasy
+    % 2 = comedy
+    % 3 = horror
+    % 4 = drama
     hiddenState = testHiddenPatterns(:,1);
     weights(:,1) = hiddenState;
 
