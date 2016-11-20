@@ -1,3 +1,6 @@
+% Written by: Akiv Jhirad
+% Contact: akivjh@gmail.com
+
 % Generates unique inputs using clamped hidden inputs, then calculates the
 % similarity between the generated outputs and training inputs to find the
 % best matching training input.

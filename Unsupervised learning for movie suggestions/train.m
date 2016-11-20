@@ -1,3 +1,6 @@
+% Written by: Akiv Jhirad
+% Contact: akivjh@gmail.com
+
 % To train a new network, first run the initialization script init.m from the command line, then
 % repeatedly call this function from the command line until training has converged.
 % To call this function from the command line, use the following code:

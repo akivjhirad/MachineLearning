@@ -1,3 +1,6 @@
+% Written by: Akiv Jhirad
+% Contact: akivjh@gmail.com
+
 % This function calculated the total energy of the model
 function [energy] = calcEnergy(inputState, hiddenState, weights)
     energy = 0;

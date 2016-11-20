@@ -4,9 +4,7 @@
 % this function creates a new batch of inputs developed by the model when
 % given a certain hidden layer activation (hidden layer can be selected in
 % testHidden.m)
-%%% error in code: instead of norm, similar bits should be used (should
-%%% never have thought norm is a good idea cuz it makes no sense), ill fix
-%%% it later
+%%% error in code: instead of norm, similar bits should be used (shoul
 function output = RunML(weights)
 
 % find the possible generated patterns

@@ -1,3 +1,6 @@
+% Written by: Akiv Jhirad
+% Contact: akivjh@gmail.com
+
 %  function to propagate activations from hidden layer to input layer
 function [inputState,inputProb] = backward(hiddenState, weights)
    netInput = weights' * hiddenState; % use transposed weights for top-down activations

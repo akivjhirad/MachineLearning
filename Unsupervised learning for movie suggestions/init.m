@@ -1,3 +1,6 @@
+% Written by: Akiv Jhirad
+% Contact: akivjh@gmail.com
+
 % Repeatedly call the function train.m from the command line until training has converged.
 K = 1; % Number of steps of brief Gibbs sampling
 nHidden = 5;  % number of hidden units including the bias unit.  

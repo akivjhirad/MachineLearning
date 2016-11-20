@@ -1,3 +1,6 @@
+% Written by: Akiv Jhirad
+% Contact: akivjh@gmail.com
+
 % The input training patterns represent input from 28 users for 12 movies chosen from 
 % Amazon EC2 MovieLens dataset.  
 % Each row below is one training pattern consisting of one user’s ratings, but in the

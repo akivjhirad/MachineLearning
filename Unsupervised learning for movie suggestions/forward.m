@@ -1,3 +1,6 @@
+% Written by: Akiv Jhirad
+% Contact: akivjh@gmail.com
+
 % This function propagates activations from input layer to hidden layer
 function [hiddenState,hiddenProb] = forward(inputState, weights)
    netInput = weights * inputState;
