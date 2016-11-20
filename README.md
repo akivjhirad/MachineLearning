@@ -4,7 +4,8 @@
 
 ### Competitive Learning
 ### Self-Organizing Map (SOM) - Kohonen model
-### Restricted Boltzmann Machine - learning movie preferences from a sample dataset
+### Restricted Boltzmann Machine 
+- learning movie preferences from a sample dataset
 	1. [Category I: Sci-fi & Fantasy]
 		1. Lord of the Rings: The Two Towers
 		2. The Matrix
