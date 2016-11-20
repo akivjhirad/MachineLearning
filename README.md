@@ -4,8 +4,7 @@ A repository with implementations of machine learning algorithms:
 - Competitive Learning
 - Self-Organizing Map (SOM) - Kohonen model
 - Restricted Boltzmann Machine - learning movie preferences from a sample dataset
-	 	
-	 	[Category I: Sci-fi & Fantasy]
+	1. [Category I: Sci-fi & Fantasy]
 		1. Lord of the Rings: The Two Towers
 		2. The Matrix
 		3. Blade Runner
